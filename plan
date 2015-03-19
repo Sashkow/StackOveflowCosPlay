@@ -1,0 +1,74 @@
+- repo
+- virtualenv 
+	- django 1.7
+- startproject
+- startapp
+- search django-registration-redux
+- install, setup 
+- download templates
+- adjust forms in templates to perform needed actions
+- write functional selenium tests
+	- register
+		- fail
+		- win
+	- login
+		- fail
+		- win 
+add smtp mail server
+	-use gmail
+
+problem: login does nothing
+	- added proper post action in a template
+
+djago social auth
+	- adjust django
+	- create fb app
+	- problem: fb app does not allow urls like http://127.0.0.1:8000
+	- problem: fb app does not allow urls like http://localhost:8000, even if site url and domain are added to fb app's settings
+	- run on heroku server
+	
+
+Создать аналог stack overflow
+
+1. Регистрация (django-registration)
+
+Логин
+email
+пароль
+
+страница успешной регистрации
+переход по ссылке в почте
+страница успешной активации
+
+2. Логин
+
+Форма логина
+Login
+Password
+
+Восстановление пароля
+
+Возможность зайти через facebook(django social auth)
+
+
+3. Страница с формой добавления вопроса
+
+Заголовок
+Текст
+
+автор и timestamp (добавляются соответсвенно автоматически из request.user и текущего времени)
+
+4. Список воспросов
+
+Список вопросов с пейджинацией
+Заголовок, автор, время и текст (не весь, 100 символов)
+
+5. Страница вопроса
+
+Возможность оставить комментарий
+
+После комментария, отправлять автору письмо, что на его вопрос ответили (сигнал)
+
+Весь код покрыть юнит-тестами, использовать исключительно class based view
+
+Результат выложить на github
