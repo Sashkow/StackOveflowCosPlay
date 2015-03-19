@@ -26,6 +26,8 @@ djago social auth
 	- problem: fb app does not allow urls like http://127.0.0.1:8000
 	- problem: fb app does not allow urls like http://localhost:8000, even if site url and domain are added to fb app's settings
 	- run on heroku server
+	- opened conformation dialog but
+		- problem TypeError at /accounts_social/complete/facebook/
 	
 
 Создать аналог stack overflow
