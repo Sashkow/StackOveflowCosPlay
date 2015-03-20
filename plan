@@ -3,17 +3,21 @@
 	- django 1.7
 - startproject
 - startapp
-- search django-registration-redux
+- search django-registration
+	- pick suggested django-registration-redux
 - install, setup 
 - download templates
 - adjust forms in templates to perform needed actions
+
 - write functional selenium tests
 	- register
-		- fail
 		- win
-	- login
 		- fail
+	- login
 		- win 
+		- fail
+	- fb login
+	- fb cancel
 add smtp mail server
 	-use gmail
 
@@ -26,9 +30,20 @@ djago social auth
 	- problem: fb app does not allow urls like http://127.0.0.1:8000
 	- problem: fb app does not allow urls like http://localhost:8000, even if site url and domain are added to fb app's settings
 	- run on heroku server
-	- opened conformation dialog but
-		- problem TypeError at /accounts_social/complete/facebook/
-	
+		- changed fb app settings to heroku url
+		- worked: got dialog proposing to associate fb accout with my site account, but
+			- problem: TypeError at /accounts_social/complete/facebook/
+				- changed serializer in settings
+				- worked
+
+unit tests?
+
+handle fb authentication canceled
+
+
+
+
+
 
 Создать аналог stack overflow
 

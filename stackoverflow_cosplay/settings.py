@@ -87,9 +87,13 @@ AUTHENTICATION_BACKENDS = (
     'social_auth.backends.facebook.FacebookBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
+# remote:
+# FACEBOOK_APP_ID              = '1633028986916813'
+# FACEBOOK_API_SECRET          = '6d54f13de8f127b47ffe666c66819a1e'
+# local:
 
-FACEBOOK_APP_ID              = '1633028986916813'
-FACEBOOK_API_SECRET          = '6d54f13de8f127b47ffe666c66819a1e'
+FACEBOOK_APP_ID              = '352522311625085'
+FACEBOOK_API_SECRET          = 'b7100e4ac55e6080480f125f9b89c220'
 
 ROOT_URLCONF = 'stackoverflow_cosplay.urls'
 
