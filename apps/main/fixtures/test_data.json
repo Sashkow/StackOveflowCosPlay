@@ -1,0 +1,56 @@
+[
+{
+    "fields": {
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-03-20T22:59:50.831Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$12000$C07f9XdRZcvX$A7hWASwMHYsTRhkRpM0Jpbkdtuzv/ib8xNmndBNy2DY=",
+        "email": "",
+        "date_joined": "2015-03-20T22:51:25.350Z"
+    },
+    "model": "auth.user",
+    "pk": 16
+},
+{
+    "fields": {
+        "username": "Leela",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2015-03-20T23:00:39.142Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$12000$iZBeNnCgDiOH$/cIealJpdVap7915dmz9guZXenQETnp0OkGJ6bYX3zk=",
+        "email": "lykhenko.olexandr@gmail.com",
+        "date_joined": "2015-03-20T22:58:35.058Z"
+    },
+    "model": "auth.user",
+    "pk": 18
+},
+{
+    "fields": {
+        "domain": "http://localhost:8000",
+        "name": "http://localhost:8000"
+    },
+    "model": "sites.site",
+    "pk": 1
+},
+{
+    "fields": {
+        "activation_key": "ALREADY_ACTIVATED",
+        "user": [
+            "Leela"
+        ]
+    },
+    "model": "registration.registrationprofile",
+    "pk": 13
+}
+]

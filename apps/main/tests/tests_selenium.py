@@ -9,15 +9,27 @@ class SeleniumTestCase(LiveServerTestCase):
     A base test case for Selenium, providing hepler methods for generating
     clients and logging in profiles.
     """
+    def setUp(self):        
+        self.selenium = WebDriver()
+        self.url = self.live_server_url
 
-    def open(self, url):
-        print self.live_server_url
-        # self.wd.get("%s%s" % (self.live_server_url, url))
+    def test_login(self):
+        self.selenium.get('%s%s' % (self.live_server_url, '/accounts/login'))
+        username_input = self.selenium.find_element_by_name("username")
+        username_input.send_keys('admin')
+        password_input = self.selenium.find_element_by_name("password")
+        password_input.clear()
+        password_input.send_keys('admin')
+        self.selenium.find_element_by_xpath('//input[@value="Log in"]').click()
+        print self.selenium.current_url
+        print self.selenium.current_window_handle
 
-    def test_smth(self):
-        print self.live_server_url
 
-        
+    def tearDown(self):
+        pass
+        # self.selenium.close()
+
+
 
 
 
